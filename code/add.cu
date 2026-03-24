@@ -86,9 +86,9 @@ int main ()
     else
     {
         printf("GPU内存分配失败!\n");
-        free(data_A);
-        free(data_B);
-        free(data_C);
+        cudaFree(GPU_A);
+        cudaFree(GPU_B);
+        cudaFree(GPU_C);
         return -1;
     }
     //主机数据传入GPU
