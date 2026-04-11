@@ -192,3 +192,5 @@ int main(void)
     cudaDeviceReset();
     return 0;
 }
+
+
